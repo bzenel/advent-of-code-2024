@@ -26,6 +26,9 @@ if __name__ == "__main__":
 
     print(f'delta_sum: {delta_sum}')
 
+    delta_sum = sum([abs(left_list[index] - right_list[index]) for index in range(len(left_list))])
+    print(f'delta_sum: {delta_sum}')
+
     similar_sum = 0
     index = 0
     for val in left_list:
